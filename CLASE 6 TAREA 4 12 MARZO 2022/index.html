@@ -22,14 +22,37 @@
 <body>
   <X3D class="fondo">
 <Scene>
-<Transform>
     <Transform DEF="Fila">
-     <inline DEF="arco" url="arco.x3d"></inline>
+        <Transform>
+            <inline url="arco.x3d" DEF="Arco"></inline>
      </Transform>
 
-     <Transform translation="4 0 0">
-         <Shape USE="arco/"></Shape>
-     </Transform>    
+     <!-- copias -->
+     <Transform translation="800 0 0">
+         <Shape USE="Arco"></Shape>
+     </Transform>  
+
+     <Transform translation="1600 0 0">
+         <Shape USE="Arco"></Shape>
+     </Transform>   
+
+     <Transform translation="2400 0 0">
+         <Shape USE="Arco"></Shape>
+     </Transform>   
+
+     <Transform translation="3200 0 0">
+         <Shape USE="Arco"></Shape>
+     </Transform>   
+
+     <Transform translation="4000 0 0">
+         <Shape USE="Arco"></Shape>
+     </Transform>   
+
+     <Transform translation="4800 0 0">
+        <Shape USE="arco"></Shape>
+     </Transform>  
+
+</Transform>   <!-- Cierre de fila  -->  
 
      </Transform> 
          
