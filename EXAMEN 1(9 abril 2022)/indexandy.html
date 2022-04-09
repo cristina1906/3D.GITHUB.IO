@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CUARTO DE ANDY</title>
+     <script src='https://www.x3dom.org/x3dom/release/x3dom-full.js'></script>
+    <link rel='stylesheet' href='https://www.x3dom.org/x3dom/release/x3dom.css'></link>
+    
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        .fondo {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+  <X3D class="fondo">
+
+<Scene> 
+     <!-- Coordenadas x y z -->
+     <Transform scale="1000 1000 1000">
+        <unline url="ejes.x3d"></unline>
+     </Transform>
+
+<!-- Suelo -->
+<Transform rotation="1 0 0 -1.57" translation="1950 0 1950">
+    <Shape>
+        <Appearance>
+            <ImageTexture url="texturas/pisowood.jpg"></ImageTexture>
+            <TextureTransform scale="1,1"></TextureTransform>
+        </Appearance>
+        <Box size="7000 7000 1"></Box>
+    </Shape>
+</Transform> 
+
+<Transform rotation="1 0 0 -1.57" translation="2000 0 2000">
+    <Shape>
+        <Appearance>
+            <ImageTexture url="texturas/papa.jpg"></ImageTexture>
+            <TextureTransform scale="1,1"></TextureTransform>
+        </Appearance>
+        <Box size="5420 5860 1"></Box>
+    </Shape>
+</Transform> 
+
+<!-- Fondo con colores para cielo y tierra,degradado de 4 colres  -->
+<Background
+skyColor="0.21 0.18 0.66,
+          0.2 0.44 0.85,
+          0.51 0.81 0.95,
+          0.77 0.80 0.82"
+skyAngle="0.5 1.5 1.57"
+groundColor="0.6 0.7 0.1,
+             0.4 0.7 0.2,
+             0.1 0.6 0.1,
+             0 0.3 0.1"
+groundAngle="0.8 1.5 1.57">
+</Background>
+
+<!-- Paredes -->
+<!-- Pared derecha -->
+<Transform rotation="0 1 0 -1.57" translation="4700 1600 1600">
+    <Shape>
+        <Appearance>
+            <ImageTexture url="texturas/pared.jpg"></ImageTexture>
+        </Appearance>
+        <Box size="5205 3200 10"></Box>
+    </Shape>
+</Transform> 
+
+<Transform rotation="0 1 0 -1.57" translation="4690 1600 1600">
+    <Shape>
+        <Appearance>
+            <ImageTexture url="texturas/juguetes1.jpg"></ImageTexture>
+        </Appearance>
+        <Box size="5205 3200 5"></Box>
+    </Shape>
+</Transform> 
+
+<!-- Pared atrás -->
+<Transform rotation="0 0 0 1.57" translation="2202 1600 -1001">
+    <Shape>
+        <Appearance>
+            <ImageTexture url="texturas/pared.jpg"></ImageTexture>
+        </Appearance>
+        <Box size="5010 3200 10"></Box>
+    </Shape>
+</Transform> 
+
+<Transform rotation="0 0 0 1.57" translation="2198 1600 -1000">
+    <Shape>
+        <Appearance>
+            <ImageTexture url="texturas/paredatras1.jpg"></ImageTexture>
+        </Appearance>
+        <Box size="5010 3200 10"></Box>
+    </Shape>
+</Transform> 
+
+<!-- Pared izquierda -->
+<Transform rotation="0 1 0 -1.57" translation="-315 1600 1600"> 
+    <Shape>
+        <Appearance>
+            <ImageTexture url="texturas/paredandy.jpg"></ImageTexture>
+        </Appearance>
+        <Box size="5205 3200 10"></Box>
+    </Shape>
+</Transform>
+
+<Transform rotation="0 1 0 -1.57" translation="-310 1600 1600"> 
+    <Shape>
+        <Appearance>
+            <ImageTexture url="texturas/pared1_.jpg"></ImageTexture>
+        </Appearance>
+        <Box size="5205 3200 10"></Box>
+    </Shape>
+</Transform>
+
+<!-- Parte de enfrente -->
+<Transform rotation="0 0 0 1.57" translation="2202 1600 4200"> 
+    <Shape>
+        <Appearance>
+            <ImageTexture url="texturas/paredentrada.jpg"></ImageTexture>
+           
+        </Appearance>
+        <Box size="5010 3200 10"></Box>
+    </Shape>
+</Transform>
+
+<!-- Techo -->
+<Transform rotation="1 0 0 -1.57" translation="2690 3202 1950">
+    <Shape>
+        <Appearance>
+            <ImageTexture url="texturas/techo.jpg"></ImageTexture>
+            <TextureTransform scale="1,1"></TextureTransform>
+        </Appearance>
+        <Box size="7000 7000 10"></Box>
+    </Shape>
+</Transform>
+</Scene>
+  </X3D>  
+</body>
+</html>

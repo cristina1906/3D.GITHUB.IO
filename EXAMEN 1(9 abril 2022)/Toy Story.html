@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOY STORY</title>
+    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TOY STORY</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/Estilos.css">
+</head>
+<style>
+    body{
+        /* El fondo con textura se vera en toda la pantalla
+        y ya no tendra bordes*/
+        background:#000 url(texturas/Toy_Story1024.png);
+        /* background-color:black; */
+        color:white;
+        font-family:sans-serif
+        
+    }
+    .fondo{
+        width: 90vw;
+        height: 90vw;
+        margin:auto;
+    }
+    h1{
+        text-align: center;
+        font-family: sans-serif;
+        color: yellow;
+    }
+</style>
+</head>
+<h1>"TOY STORY"</h1>
+<body>
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/"> <img src="" alt="">
+                </a>
+                <nav class="navegacion"> 
+                    <a href="#">HOME</a>
+                    <a href="#HISTORIA">¿QUIÉNES SON?</a>
+                    <a href="#Servicios">PELÍCULAS Y PERSONAJES DE TOY STORY</a>
+                    <a href="#Contacto">CONTACTO</a>
+                </nav>
+            </div>
+     </Header>
+     <section id="HISTORIA"> 
+        <Section class="contenedor section">
+                <div class="subtitulos">    
+                    <div class="center">
+                    <div aling= "center">
+                     <h2> ¿QUIÉNES SON? </h2>
+                        <p>Toy Story es una película infantil de animación por computadora dirigida por John Lasseter, estrenada en 1995 y producida por Pixar. Fue el primer largometraje de Pixar, además de la primera cinta animada completamente con efectos digitales en la historia del cine.3​
+                           Joss Whedon, Andrew Stanton, Joel Cohen y Alec Sokolow redactaron el guion, y Randy Newman compuso la banda sonora. El reparto principal estuvo integrado por Tom Hanks y Tim Allen, quienes prestaron sus voces en inglés a los personajes de Woody y Buzz, respectivamente. Para el proceso de animación, colaboraron un total de 110 empleados de Pixar,4​ a diferencia de los 800 que trabajaron en una de las últimas producciones de Disney en aquellos años, El rey león (1994).5​
+                           La historia sigue las aventuras de un grupo de juguetes vivientes, en particular del vaquero Woody y el guardián espacial Buzz Lightyear. Si bien al principio rivalizan entre sí, conforme transcurre la trama se van volviendo amigos. Tras su estreno, Toy Story se convirtió en la cinta más taquillera de EE. UU. y Canadá en su primer fin de semana de exhibición.1​ En total recaudó más de 191 millones USD en ambos países, y más de 361 millones adicionales a nivel internacional.2​ Se hizo acreedora a críticas positivas en su gran mayoría, en las que se elogió la innovación técnica de la animación y el guion.6​7​    
+                           Disney y Pixar comenzaron una franquicia inspirada en los personajes y elementos de la película, que incluye juguetes y videojuegos, entre otros productos diversos. La trama de Toy Story fue continuada en el cine con Toy Story 2 (1999) y Toy Story 3 (2010). En noviembre de 2014 Disney anunció la producción de Toy Story 4 bajo la dirección de John Lasseter, director de la primera entrega de la saga. Su fecha de estreno fue el 21 de junio de 2019.8​</p>
+                </div>
+     
+        </Section>
+    </section>
+    <Main> 
+        
+        <section id="Servicios"> 
+        <Section class="contenedor section"> 
+            <div class="subtitulos"> 
+             <h2>PELÍCULAS Y PERSONAJES DE TOY STORY</h2>
+                </div>
+                    <div class="icono-nosotros">
+                        <div class="Anuncios-anuncios">
+                            <div class="Anuncios">
+                                <img src="texturas/TS1.jpg" alt="">
+                                <h3>TOY STORY 1</h3>
+                                <button type="button center">Más información</button>
+                            </div>
+                        </div>
+                    
+                        <div class="Anuncios-anuncios">
+                            <Div class="Anuncios">
+                                <img src="texturas/TS2.jpg" alt="">
+                                <h3>TOY STORY 2</h3>
+                                <button type="button">Más información</button>
+                            </div>
+                        </div>
+                        <div class="Anuncios-anuncios">
+                            <div class="Anuncios">
+                                <img src="texturas/TS3.jpg" alt="">
+                                <h3>TOY STORY 3</h3>
+                                <button type="button">Más información</button>     
+                            </div>
+                        </div> 
+        </Section>
+    </section>
+
+    <body>
+        <x3d class="fondo">
+            <Scene>
+              <!-- Animación de rotación para Toy Story  -->
+              <transform DEF="Toy Story">
+               <Shape>
+                   <Appearance>
+                     <imageTexture url="texturas/pony.jpg"/>
+                   </Appearance>
+                   <Sphere></Sphere>
+                </Shape>
+        
+                     <!-- Buddy -->
+                     <transform translation="2 0 0" scale="0.4 0.4 0.4">
+                         <inline url="buddy.x3d"></inline>
+                    </transform>
+        
+                     <!-- Buzz -->
+                     <transform translation="-1.5 0 3" scale="0.2 0.2 0.2">
+                          <!-- <transform translation="2 0 0" scale="0.2 0.2 0.2"> para alinearlos a la derecha  -->
+                          <!-- <transform translation="-3 0 3" scale="0.2 0.2 0.2">numeros negativos se posicionan de lodo contrario x y z -->
+                          <!-- <transform translation="0 0 3" scale="0.2 0.2 0.2">frente al sol los parametros que se modifican con x y z -->
+                          <!-- <transform translation="-1.5 0 3" scale="0.2 0.2 0.2"> para la izquierda  -->
+                        <inline url="buzz2.x3d"></inline>
+                     </transform>
+            
+                     <!-- Jessie -->
+                     <transform translation="2 0 0" scale="0.3 0.3 0.3 ">
+                         <inline url="jessie.x3d"></inline>
+                     </transform>
+            
+                     <!-- Rex -->
+                     <transform translation="-1.1 0 6.9" scale="0.2 0.2 0.2">
+                        <inline url="rex.x3d"></inline>
+                     </transform>
+                    
+                     <!-- Hamm -->
+                     <transform translation="2 0 4.5" scale="0.5 0.5 0.5">
+                         <inline url="hamm.x3d"></inline>
+                     </transform>
+            
+                     <!-- Sr.papa -->
+                     <transform translation="4.5 0 0" scale="0.5 0.5 0.5">
+                         <inline url="sr.papa.x3d"></inline> 
+                     </transform>
+            
+                     <!-- Marciano -->
+                     <transform translation="-.4 0 -5" scale="0.2 0.2 0.2">
+                        <inline url="marciano-lotso.x3d"></inline> 
+                     </transform>
+                    
+                     <!-- Slinky -->
+                     <transform translation="-4 0 -0" scale="0.5 0.5 0.5">
+                        <inline url="slinky.x3d"></inline> 
+                     </transform>
+        
+                     <!-- Parámetros de animación: sensor de tiempo y cuál eje se animará -->
+                             <timeSensor DEF="timerTL" cycleInterval="10" loop="true"></timeSensor>
+                             <orientationInterpolator DEF="rotatorTL" key="0 0.5 1" 
+                             keyValue="0 1 0 0 0 1 0 3.14 0 1 0 6.28">
+                             </orientationInterpolator> 
+            
+                     <!-- Cuerpoespin -->
+                     <transform translation="-.6 0 -3.5" scale="0.4 0.4 0.4">
+                        <inline url="cuerpoespin.x3d"></inline> 
+                     </transform>
+            
+                     <!-- Lotso -->
+                     <transform translation="-.6 0 -3.5" scale="0.4 0.4 0.4">
+                        <inline url="lotso.x3d"></inline> 
+                     </transform>
+        
+                    <!-- Viejito  -->
+                    <transform translation="7 0 0" scale="0.4 0.4 0.4">
+                        <inline url="viejito.x3d"></inline> 
+                     </transform> <!-- Cierre de Toy Story -->
+                     <!-- ROUTE canaliza el sensor de tiempo y la rotación al transform -->
+                    <ROUTE fromNode="timerTL" fromField="fraction_changed" toNode="rotatorTL"
+                    toField="set_fraction"></ROUTE>
+                    <ROUTE fromNode="rotatorTL" fromField="value_changed" toNode="Toy Story"
+                     toField="set_rotation"></ROUTE>"
+            </Scene>
+        </x3d>
+        </body>
+        <section class="products-list">
+            <div class="product-item" category="Editorial">
+                <img src="texturas/buddy.jpg" alt="">
+                <a href="#">COMISARIO BUDDY</a>
+            </div>
+        
+            <div class="product-item" category="Fotografía">
+                <img src="texturas/buzz.jpg" alt="">
+                <a href="#">BUZZ LIGHTYEAR</a>
+            </div>
+
+            <div class="product-item" category="Fotografía">
+                <img src="texturas/jessie.jpg" alt="">
+                <a href="#">JESSIE</a>
+            </div>
+
+            <div class="product-item" category="Fotografía">
+                <img src="texturas/rex.jpg" alt="">
+                <a href="#">REX</a>
+            </div>
+
+            <div class="product-item" category="Pintura">
+                <img src="texturas/hamm.jpg" alt="">
+                <a href="#">DR.TOCINO</a>               
+            </div>
+
+            <div class="product-item" category="Pintura">
+                <img src="texturas/sr.papa.jpg" alt="">
+                <a href="#">SR. CARA DE PAPA</a>
+            </div>
+
+            <div class="product-item" category="Pintura">
+                <img src="texturas/marciano1.jpg" alt="">
+                <a href="#">MARCIANO</a>
+            </div>
+
+            <div class="product-item" category="Empaque y Embalaje">
+                <img src="texturas/slinky.jpg" alt="">
+                <a href="#">SLINKY</a>
+            </div>
+            
+            <div class="product-item" category="Empaque y Embalaje">
+                <img src="texturas/mr.prickles.jpg" alt="">
+                <a href="#">MR. PRICKLES</a>
+            </div>
+            
+            <div class="product-item" category="Empaque y Embalaje">
+                <img src="texturas/lotso.jpg" alt="">
+                <a href="#">LOTSO</a>
+            </div>
+            
+            <div class="product-item" category="Empaque y Embalaje">
+                <img src="texturas/pony.jpg" alt="">
+                <a href="#">BUTTERCUP</a>
+             </div>
+
+             <div class="product-item" category="Fotografía">
+                <img src="texturas/viejito.jpg" alt="">
+                <a href="#">OLOROSO PETE</a>
+         </div>
+        </section>
+            <div class="subtitulos">
+                <button type="button">Ver Todo</button>
+            </div>
+
+            <body>
+                <X3D class="fondo">
+              
+              <Scene> 
+                   <!-- Coordenadas x y z -->
+                   <Transform scale="1000 1000 1000">
+                      <unline url="ejes.x3d"></unline>
+                   </Transform>
+              
+              <!-- Suelo -->
+              <Transform rotation="1 0 0 -1.57" translation="1950 0 1950">
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="texturas/pisowood.jpg"></ImageTexture>
+                          <TextureTransform scale="1,1"></TextureTransform>
+                      </Appearance>
+                      <Box size="7000 7000 1"></Box>
+                  </Shape>
+              </Transform> 
+              
+              <Transform rotation="1 0 0 -1.57" translation="2000 0 2000">
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="texturas/papa.jpg"></ImageTexture>
+                          <TextureTransform scale="1,1"></TextureTransform>
+                      </Appearance>
+                      <Box size="5420 5860 1"></Box>
+                  </Shape>
+              </Transform> 
+              
+              <!-- Fondo con colores para cielo y tierra,degradado de 4 colres  -->
+              <Background
+              skyColor="0.21 0.18 0.66,
+                        0.2 0.44 0.85,
+                        0.51 0.81 0.95,
+                        0.77 0.80 0.82"
+              skyAngle="0.5 1.5 1.57"
+              groundColor="0.6 0.7 0.1,
+                           0.4 0.7 0.2,
+                           0.1 0.6 0.1,
+                           0 0.3 0.1"
+              groundAngle="0.8 1.5 1.57">
+              </Background>
+              
+              <!-- Paredes -->
+              <!-- Pared derecha -->
+              <Transform rotation="0 1 0 -1.57" translation="4700 1600 1600">
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="texturas/pared.jpg"></ImageTexture>
+                      </Appearance>
+                      <Box size="5205 3200 10"></Box>
+                  </Shape>
+              </Transform> 
+              
+              <Transform rotation="0 1 0 -1.57" translation="4690 1600 1600">
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="texturas/juguetes1.jpg"></ImageTexture>
+                      </Appearance>
+                      <Box size="5205 3200 5"></Box>
+                  </Shape>
+              </Transform> 
+              
+              <!-- Pared atrás -->
+              <Transform rotation="0 0 0 1.57" translation="2202 1600 -1001">
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="texturas/pared.jpg"></ImageTexture>
+                      </Appearance>
+                      <Box size="5010 3200 10"></Box>
+                  </Shape>
+              </Transform> 
+              
+              <Transform rotation="0 0 0 1.57" translation="2198 1600 -1000">
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="texturas/paredatras1.jpg"></ImageTexture>
+                      </Appearance>
+                      <Box size="5010 3200 10"></Box>
+                  </Shape>
+              </Transform> 
+              
+              <!-- Pared izquierda -->
+              <Transform rotation="0 1 0 -1.57" translation="-315 1600 1600"> 
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="texturas/paredandy.jpg"></ImageTexture>
+                      </Appearance>
+                      <Box size="5205 3200 10"></Box>
+                  </Shape>
+              </Transform>
+              
+              <Transform rotation="0 1 0 -1.57" translation="-310 1600 1600"> 
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="texturas/pared1_.jpg"></ImageTexture>
+                      </Appearance>
+                      <Box size="5205 3200 10"></Box>
+                  </Shape>
+              </Transform>
+              
+              <!-- Parte de enfrente -->
+              <Transform rotation="0 0 0 1.57" translation="2202 1600 4200"> 
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="texturas/paredentrada.jpg"></ImageTexture>
+                         
+                      </Appearance>
+                      <Box size="5010 3200 10"></Box>
+                  </Shape>
+              </Transform>
+              
+              <!-- Techo -->
+              <Transform rotation="1 0 0 -1.57" translation="2690 3202 1950">
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="texturas/techo.jpg"></ImageTexture>
+                          <TextureTransform scale="1,1"></TextureTransform>
+                      </Appearance>
+                      <Box size="7000 7000 10"></Box>
+                  </Shape>
+              </Transform>
+              </Scene>
+
+    <section id="Contacto">
+    <footer class="navegacion">
+            <h1 class="header-text">Contáctanos</h1>
+            <div class="container">
+                <div class="form-top">
+                </div>
+                <form class="form_reg" action="">  
+                </form>
+            </div>
+            <form class="form_reg" action="">
+                <input class="input" type="text" placeholder="&#128100; Nombre" required autofocus>
+                <input class="input" type="email" placeholder="&#9993; Email" required>
+                <input class="input" type="tel" placeholder="&#128222; Teléfono" required>
+                <input class="input" type="text" placeholder="&#8962; Dirección" required>
+                <div class="btn_form">
+                    <input class="btn_submit" type="submit" value="REGISTRAR">
+                    <input class="btn_reset" type="reset" value="LIMPIAR">
+                </div>
+            </form>
+            </div>
+        </nav>
+    </footer>
+   </section>
+</body>
+</html>

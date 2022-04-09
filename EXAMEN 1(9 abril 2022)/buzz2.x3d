@@ -1,0 +1,10 @@
+<x3d>
+    <Scene>
+       <Shape>
+           <Appearance>
+             <imageTexture url="texturas/buzz2.jpg"/>
+           </Appearance>
+           <Sphere></Sphere>
+       </Shape> 
+    </Scene>
+</x3d>
