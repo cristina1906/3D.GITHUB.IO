@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realidad Aumentada con AR.js</title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+</head>
+<body>
+    <a-scene embedded embedded arjs="sourceType: webcam;detectionMode: mono_and_matrix; matrixCodeType: 3x3;" renderer="precision: medium;"embeddedgesture-detector>
+<!--  Octahedron  -->
+        <a-marker type="barcode" value="5">
+            <a-entity geometry="primitive: octahedron; radius: 1; height:4;" material="src:url(texturas/2.jpeg)" rotation="0 2 0" position="0 0 0"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 24000; easing:linear">
+            </a-entity>
+<!-- Espacio  -->  
+<a-entity geometry="primitive: plane; height:10; width:10" material="src:url(texturas/cielo.jpeg); side: double" position="0 -1 0" rotation="90 0 0"></a-entity> 
+<!-- Figuras -->           
+<!-- La animacion contenida en a-entity --> 
+<!--  Cylinder alyssa, teotfw, -->           
+            <a-entity geometry="primitive:cylinder ; radius: 0.4" material="src: url(texturas/3.jpeg)" rotation="-40 0 0" position="3 2 0"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 24000; easing:linear">
+            </a-entity>
+        </a-marker>
+    <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
