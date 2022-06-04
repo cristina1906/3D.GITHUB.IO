@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Arte Moderno Leonid Afremov </title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+    <a-scene embedded arjs>
+        <a-marker preset="hiro">
+<!-- Arte Moderno Leonid Afremov -->          
+<!-- Tigre --> 
+          <a-entity geometry="primitive: cylinder; radius: 1" material="src: url(texturas/tigre.jpeg)" position="0 1 0"></a-entity>
+<!-- Fondo -->  
+        <a-entity geometry="primitive: plane; height:10; width:10" material="src:url(texturas/fondo.jpeg); side: double" position="0 -1 0" rotation="90 0 0"></a-entity>                 
+<!-- Pinturas -->           
+<!-- La animacion contenida en a-entity --> 
+             <a-entity rotation="0 0 0" animation="property:rotation;  to: 0 360 0;loop:true; dur: 10000; easing:linear">
+               <!-- Paisaje --> 
+             <a-entity geometry="primitive: cylinder; radius:0.3;"  position="3 0 -5" material="src: url(texturas/paisaje.jpeg)"></a-entity>
+
+               <!-- Personas --> 
+             <a-entity geometry="primitive: cylinder; radius:0.25;" position="-1.8 0 7" material="src: url(texturas/personas.jpeg)"></a-entity>
+
+               <!-- Niñas--> 
+             <a-entity geometry="primitive:box; radius:1;" position="3 0 0" material="src: url(texturas/niñas.jpeg)"></a-entity>
+
+               <!-- Velero --> 
+             <a-entity geometry="primitive: cylinder; radius:0.2;" position="2 0 0" material="src: url(texturas/velero.jpeg)"></a-entity>
+
+               <!-- Bosque -->
+             <a-entity geometry="primitive: box; radius:0.5;" position="2 0 4.3 0" material="src: url(texturas/bosque.jpeg)"></a-entity>
+
+               <!-- Caballos -->
+             <a-entity geometry="primitive: box; radius:0.4;" position="0 1 -3" material="src: url(texturas/caballos.jpeg)"></a-entity>
+             
+               <!-- Tren -->
+             <a-entity geometry="primitive: box; radius:0.6;" position="0 1 4" material="src: url(texturas/tren.jpeg)"></a-entity>
+             
+               <!-- Arcoiris -->
+             <a-entity geometry="primitive: cylinder; radius:0.4;" position="-3 0 0" material="src: url(texturas/arcoiris.jpeg)"></a-entity>
+
+               <!-- Globos -->
+             <a-entity geometry="primitive: box; radius:0.2;" position="6 0 0" material="src: url(texturas/globos.jpeg)"></a-entity>
+
+               <!-- Torre -->
+             <a-entity geometry="primitive: cylinder; radius:0.25;" position="5 0 -6" material="src: url(texturas/torre.jpeg)"></a-entity>
+           </a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
