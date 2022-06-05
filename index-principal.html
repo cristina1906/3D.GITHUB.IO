@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Estilos1.css">
+    <!-- Carga de estilos -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- CSS de Font Awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Fuente de google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Plantilla normalize -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- CSS personalizados -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  
+
+
+    <title>EXAMEN FINAL</title>
+    <style>
+        .swiper-slide {
+          height: 45rem;
+          color: white;
+          background-position: center, center;
+          background-size: cover;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+        }
+      </style>
+    </head>
+<body>
+
+    <header>
+        <section id="barra-redes">
+            <div class="container-fluid bg-secondary text-center">
+                <div class="row justify-content-sm-between"> 
+                    <div class="col-12 col-sm-auto text-success">
+                        <i class="fas fa-street-view"></i><span class="h4">Programación Realidad Virtual y Aumentada</span>
+                    </div>                   
+                    <div class="col-12 col-sm-auto">
+                        <ul class="redes-sociales list-unstyled d-inline-flex">
+                            <li><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com//"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/watch?v=frNjBYk3SRw"><i class="fab fa-youtube"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <nav id="menu-navegacion" class="navbar navbar-dark bg-secondary navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contenido"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="contenido" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Programación">Programación y Trabajos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
+                    </ul>            
+                </div>
+            </div>
+        </nav>
+          
+         <!-- Swiper -->
+         <section class="swiper-container mySwiper">
+            <div class="swiper-wrapper text-center">
+              <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image: url(./texturas/giocondabelli.jpeg)">
+                <div class="container">
+                    <div class="row">
+                        <div class="slogan col-12">
+                            <p>Realidad Aumentada</p><p>Arte Abstracto</p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+              <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image: url(./texturas/arte-moderno.jpeg);">
+                <div class="container">
+                    <div class="row">
+                        <div class="slogan col-12">
+                            <p>Realidad Aumentada</p><p>Arte Moderno</p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+              <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image: url(./texturas/marcador.png);">
+                <div class="container">
+                    <div class="row">
+                        <div class="slogan col-12">
+                            <p>Realidad Aumentada</p><p>Marcadores</p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+              <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image: url(./texturas/oso-marker.png);">
+                <div class="container">
+                    <div class="row">
+                        <div class="slogan col-12">
+                            <p>Realidad Aumentada</p><p>Marcador personalizado</p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+              <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image: url(./texturas/personaje\ 3d\ animado.png);">
+                <div class="container">
+                    <div class="row">
+                        <div class="slogan col-12">
+                            <p>Realidad Aumentada</p><p>Personaje en 3D Animado</p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+          </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+    </header>
+    
+     <section id=Programación>
+     <section class="container section">
+        <div class="subtitulos"></div> 
+        <h2 class="text-center mb-4 fw-light">PROGRAMACIÓN Y TRABJOS</h2>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-lg-6 mb-3 mb-lg-0">
+                <div class="razones card h-100">                                
+                    <div class="card-body text-center d-grid align-items-end">
+                        <i class="fas fa-house-user text-primary fa-4x"></i>  
+                        <h3 class="card-title">Realidad Aumentada</h3>
+                        <div class="card-text">Nos permite añadir capas de información visual sobre el mundo real que nos rodea, utilizando la tecnología, dispositivos como pueden ser nuestros propios teléfonos móviles. Esto nos ayuda a generar experiencias que aportan un conocimiento relevante sobre nuestro entorno, y además recibimos esa información en tiempo real.En resumen es una tecnología con un potencial enorme, y la convierte en una de las principales armas de innovación para los próximos años,
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 mb-3 mb-lg-0">
+                <div class="razones card h-100">                    
+                    <div class="card-body text-center d-grid align-items-end">
+                        <i class="fas fa-user-shield text-primary fa-4x"></i>
+                        <h3 class="card-title">Realidad Virtual</h3>
+                        <div class="card-text">Es un entorno de escenas y objetos de apariencia real generado mediante tecnología informática que crea en el usuario la sensación de estar inmerso en él. Dicho entorno se contempla a través de un dispositivo conocido como gafas o casco de Realidad Virtual. Gracias a la RV podemos sumergirnos en videojuegos como si fuéramos los propios personajes, aprender a operar un corazón o mejorar la calidad de un entrenamiento deportivo para obtener el máximo rendimiento.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     </section>
+
+        <section class="container section"> 
+            <div class="subtitulos">
+                    <div class="razones card h-100">                                
+                         <div class="card-body text-center d-grid align-items-end">
+                         <div class="icono-trabajo">
+                             <div class="Anuncios-anuncios">
+                                 <div class="Anuncios">
+                             <img src="texturas/arte-a.jpg"/>
+                                 </div>
+                             </div>
+                         </div>    
+                         <h3 class="card-title">ARTE ABSTRACTO</h3>
+                             <form>
+                                 <a href="https://cristina1906.github.io/3D.GITHUB.IO/Relidad%20Aumnetada%20(Arte)/arte%20abstracto.html">
+                                    <input type="button" value="Click Here"/>
+                                </a>
+                             </form>
+                        </div>
+                    </div>
+        
+                    <div class="razones card h-100">                    
+                         <div class="card-body text-center d-grid align-items-end">
+                         <div class="icono-trabajo">
+                             <div class="Anuncios-anuncios">
+                                 <div class="Anuncios">
+                             <img src="texturas/arte-m.jpg">
+                                 </div>
+                             </div>
+                        </div>
+                        <h3 class="card-title">ARTE MODERNO</h3>
+                             <form>
+                                 <a href="https://cristina1906.github.io/3D.GITHUB.IO/Relidad%20Aumnetada%20(Arte)/arte%20moderno.html">
+                                    <input type="button" value="Click Here"/>
+                                </a>
+                            </form>   
+                        </div>
+                    </div>
+
+                    <div class="razones card h-100">                    
+                        <div class="card-body text-center d-grid align-items-end">
+                        <div class="icono-trabajo">
+                            <div class="Anuncios-anuncios">
+                                <div class="Anuncios">
+                            <img src="texturas/marcador-personalizado.jpg">
+                                </div>
+                            </div>
+                       </div>
+                       <h3 class="card-title">MARCADOR OSO</h3>
+                            <form>
+                                <a href="https://cristina1906.github.io/3D.GITHUB.IO/CLASE%2014%20(14%20MAYO%202022)/Marcadoroso%20(14%2005%202022)/oso.html">
+                                   <input type="button" value="Click Here"/>
+                               </a>
+                           </form>   
+                       </div>
+                   </div>            
+            </div> 
+        </section>
+
+        <section class="container section"> 
+            <div class="subtitulos">
+                    <div class="razones card h-100">                                
+                         <div class="card-body text-center d-grid align-items-end">
+                         <div class="icono-trabajo">
+                             <div class="Anuncios-anuncios">
+                                 <div class="Anuncios">
+                             <img src="texturas/marcador-kanji.jpg"/>
+                                 </div>
+                             </div>
+                         </div>    
+                         <h3 class="card-title">MARCADOR KANJI</h3>
+                             <form>
+                                 <a href="https://cristina1906.github.io/3D.GITHUB.IO/CLASE%2014%20(14%20MAYO%202022)/indexkanji.html">
+                                    <input type="button" value="Click Here"/>
+                                </a>
+                             </form>
+                        </div>
+                    </div>
+        
+                    <div class="razones card h-100">                    
+                         <div class="card-body text-center d-grid align-items-end">
+                         <div class="icono-trabajo">
+                             <div class="Anuncios-anuncios">
+                                 <div class="Anuncios">
+                             <img src="texturas/marcador-barcode.jpg">
+                                 </div>
+                             </div>
+                        </div>
+                        <h3 class="card-title">MARCADO BARCODE</h3>
+                             <form>
+                                 <a href="https://cristina1906.github.io/3D.GITHUB.IO/CLASE%2014%20(14%20MAYO%202022)/indexbarcode.html">
+                                    <input type="button" value="Click Here"/>
+                                </a>
+                            </form>   
+                        </div>
+                    </div>
+                    
+                    <div class="razones card h-100">                    
+                        <div class="card-body text-center d-grid align-items-end">
+                        <div class="icono-trabajo">
+                            <div class="Anuncios-anuncios">
+                                <div class="Anuncios">
+                            <img src="texturas/marcador-spiderman.jpg">
+                                </div>
+                            </div>
+                       </div>
+                       <h3 class="card-title">PERSONAJE 3D</h3>
+                            <form>
+                                <a href="https://cristina1906.github.io/3D.GITHUB.IO/TAREA%203D%20ANIMACIO%CC%81N%20(21%2005%202022)/indexspidermanbreakdance.html">
+                                   <input type="button" value="Click Here"/>
+                               </a>
+                           </form>   
+                       </div>
+                   </div>            
+            </div> 
+        </section>
+
+        <section class="container section"> 
+            <div class="subtitulos">
+                    <div class="razones card h-100">                                
+                         <div class="card-body text-center d-grid align-items-end">
+                         <div class="icono-trabajo">
+                             <div class="Anuncios-anuncios">
+                                 <div class="Anuncios">
+                             <img src="texturas/marcador-tom.jpg"/>
+                                 </div>
+                             </div>
+                         </div>    
+                         <h3 class="card-title">MARCADOR TOM</h3>
+                             <form>
+                                 <a href="https://cristina1906.github.io/3D.GITHUB.IO/TAREA%203D%20ANIMACIO%CC%81N%20(21%2005%202022)/index-tom-breakdance-1990.html">
+                                    <input type="button" value="Click Here"/>
+                                </a>
+                             </form>
+                        </div>
+                    </div>
+        
+                    <div class="razones card h-100">                    
+                         <div class="card-body text-center d-grid align-items-end">
+                         <div class="icono-trabajo">
+                             <div class="Anuncios-anuncios">
+                                 <div class="Anuncios">
+                             <img src="texturas/marcador-1.jpg">
+                                 </div>
+                             </div>
+                        </div>
+                        <h3 class="card-title">CILINDRO</h3>
+                             <form>
+                                 <a href="https://cristina1906.github.io/3D.GITHUB.IO/cubo-marcadores/multi-simple.html">
+                                    <input type="button" value="Click Here"/>
+                                </a>
+                            </form>   
+                        </div>
+                    </div>
+                    
+                    <div class="razones card h-100">                    
+                        <div class="card-body text-center d-grid align-items-end">
+                        <div class="icono-trabajo">
+                            <div class="Anuncios-anuncios">
+                                <div class="Anuncios">
+                            <img src="texturas/marcador-2.jpg">
+                                </div>
+                            </div>
+                       </div>
+                       <h3 class="card-title">DODECAEDRO</h3>
+                            <form>
+                                <a href="https://cristina1906.github.io/3D.GITHUB.IO/cubo-marcadores/multi-simple.html">
+                                   <input type="button" value="Click Here"/>
+                               </a>
+                           </form>   
+                       </div>
+                   </div>            
+            </div> 
+        </section>
+
+        <section class="container section"> 
+            <div class="subtitulos">
+                    <div class="razones card h-100">                                
+                         <div class="card-body text-center d-grid align-items-end">
+                         <div class="icono-trabajo">
+                             <div class="Anuncios-anuncios">
+                                 <div class="Anuncios">
+                             <img src="texturas/marcador-3.jpg"/>
+                                 </div>
+                             </div>
+                         </div>    
+                         <h3 class="card-title">CAJA</h3>
+                             <form>
+                                 <a href="https://cristina1906.github.io/3D.GITHUB.IO/cubo-marcadores/multi-simple.html">
+                                    <input type="button" value="Click Here"/>
+                                </a>
+                             </form>
+                        </div>
+                    </div>
+
+                    <div class="razones card h-100">                    
+                        <div class="card-body text-center d-grid align-items-end">
+                        <div class="icono-trabajo">
+                            <div class="Anuncios-anuncios">
+                                <div class="Anuncios">
+                            <img src="texturas/ QR-marcador1.png">
+                                </div>
+                            </div>
+                       </div>
+                       <h3 class="card-title">QR-CUBO</h3>
+                            <form>
+                                <a href="https://cristina1906.github.io/3D.GITHUB.IO/cubo-marcadores/index.html">
+                                   <input type="button" value="Click Here"/>
+                               </a>
+                           </form>   
+                       </div>
+                   </div>            
+            </div> 
+
+        </section>
+
+   
+        
+
+     <section id=Contacto>
+        <section class="container section">
+           <div class="subtitulos"> 
+           <h2 class="text-center mb-4 fw-light">CONTACTO</h2>
+        <form class="form_reg" action="">  
+        </form>
+          </div>
+    <form class="form_reg" action="">
+        <input class="input" type="text" placeholder="&#128100; Nombre" required autofocus>
+        <input class="input" type="email" placeholder="&#9993; Email" required>
+        <input class="input" type="tel" placeholder="&#128222; Teléfono" required>
+        <input class="input" type="text" placeholder="&#8962; Dirección" required>
+        <div class="btn_form">
+            <input class="btn_submit" type="submit" value="REGISTRAR">
+            <input class="btn_reset" type="reset" value="LIMPIAR">
+        </div>
+     </form>
+
+    <footer id="pie" class="small bg-secondary text-success">
+        <div class="container py-3 py-sm-5">
+            <div class="row"></div>
+            <ul class="list-inline mt-2 mb-0 text-center">
+                <li class="list-inline-item">&copy; CRISTINA RIVAS PÉREZ. EXAMEN FINAL 11 JUNIO 2022. USB PROGRAMACIÓN REALIDAD VIRTUAL Y AUMENTADA.</li>
+                <li class="list-inline-item">ALL RIGHTS RESERVED.</li>
+            </ul>
+        </div>
+     </footer>
+     </section>
+     </section>
+
+    <!-- Carga de scripts JS -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>  
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/mis-scripts.js "></script> 
+</body>
+</html>
